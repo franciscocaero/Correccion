@@ -1,1 +1,44 @@
+Explique a detalle cada literal
+¿Qué son los getters y setters?
+Setters: Hacer un setter permte que podamos cambiar o asignar el valor de una variable.
+Getters:Tienee la función de get , es decir, de obtener el valor de una variable.
 
+Indique una secuencia de comandos en git que permiten clonar un repositorio, traer los últimos cambios y una vez realizados los cambios, actualizar los cambios.
+git clone
+git pull
+git add
+git commit
+git push
+
+¿Para qué se utiliza try y catch en java? Explique con un ejemplo en código.
+Try y catch es utilizada para una parte conocida como manejo de excepciones, es decir, cómo rabaajr con los errores.
+Con esto podemos evitar que se detenga programa al encontrar un error, se ejecute lo que indiquemos y el programa continue.
+public class Main {
+    public static void main(String[] args) {
+        int n1 =10;
+        int n2= 0;
+        int resultado;
+        
+        try {
+            resultado = n1 /n2;
+            System.out.println("El resultado es: " + resultado);
+        } catch(ArithmeticException e) {
+            System.out.println("No se puede dividirr por este número   ");
+        }
+        
+        System.out.println("Programa finalizado");
+    }
+}
+
+Defina Programación Orientada a Objetos y el concepto de constructores. Muestre un ejemplo de los tipos de constructores que puede haber.
+Como el nombre lo dice, POO se basa en "Objetos" , describe elementos y su comportamiento. El constuctor es un método que sirve para inicializar un objeto de una clase,
+en las que se especifica los datos y el tipo. El constructor puede tener o no parámetros: el primero no necesita poner datos para  crear una nueva instancia, 
+en el segundo sí se precisa.
+PUBLIC CLASS EJEMPLO_CON {
+  INT N11;
+  STRING EJEM_CA;
+  PUBLIC EJEMPLO() {
+    N11 = 0;
+    EJEM_CA = "DEFAULT"; 
+  }
+}
